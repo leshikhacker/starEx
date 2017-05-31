@@ -1,0 +1,27 @@
+{
+  "name": "gulp-simple-starter",
+  "version": "1.0.0",
+  "description": "My gulp simple starter",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "leshikhacker",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-rename": "*",
+    "gulp-postcss": "*",
+    "postcss-import": "*",
+    "postcss-css-variables": "*"
+  }
+}
