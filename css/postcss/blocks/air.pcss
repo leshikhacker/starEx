@@ -1,0 +1,67 @@
+.air {
+  font-family: 'Exo', sans-serif;
+  font-size: 40px;
+  display: flex;
+  position: relative;
+  min-height: 410px;
+}
+.air__bg {
+  display: flex;
+  position: absolute;
+  width: 46%;
+  bottom: 0;
+}
+.air__bg-triangle {
+  width: 0px;
+  height: 0px;
+  border-top: 320px solid transparent;
+  border-left: 300px solid var(--pink);
+  opacity: 0.8;
+}
+.air__bg-notebook {
+  display: none;
+}
+.air__text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  padding: 1em;
+}
+.air__text p {
+  font-size: 0.4em;
+  line-height: 1.625em;
+  color: #282828;
+  opacity: 0.66;
+}
+
+@media screen and (min-width: 1200px) {
+  .air {
+    min-height: 550px;
+  }
+  .air__bg {
+    position: relative;
+    top: 0;
+  }
+  .air__bg-triangle { 
+    border-top: 620px solid transparent;
+    border-left: 600px solid var(--pink);
+    margin-top: -70px;
+  }
+  .air__bg-notebook {
+    position: absolute;
+    display: block;
+    background-image: url(../images/macbook.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-position-x: 50%;
+    background-position-y: 50%;
+  }
+  .air__text {
+    width: 54%;
+    padding: 2em;
+  }
+}

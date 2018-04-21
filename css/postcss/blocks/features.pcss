@@ -1,0 +1,95 @@
+/* TODO - figure out with responsive font and paddings/margins */
+.features {
+  font-family: 'Exo', sans-serif;
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+  background-color: var(--light-gray);
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  z-index: 1;
+}
+
+.features__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.75em;
+}
+.features__item {
+  position: relative;  
+  padding-top: calc(67px + 0.75em);
+  padding-left: 0.375em;
+  padding-right: 0.375em;
+  flex-basis: 100%;
+  margin-top: 1.25em;
+}
+.features__item-title {
+  font-size: 0.55em;
+  line-height: 1.4em;
+  font-weight: 500;
+  color: #282828;
+  padding-bottom: 0.5em;
+}  
+.features__item p {
+  font-size: 0.4em;
+  font-weight: 500;
+  line-height: 1.625em;
+  color: #282828;
+  opacity: 0.66;
+}
+.features__item:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 67px;
+  height: 67px;
+  background-size: 67px;
+  background-repeat: no-repeat;
+  top: 0;
+  left: calc((100% - 67px) / 2);
+}
+.features__item-pic:before {
+  background-image: url(../images/features-item-1.png);
+}
+.features__item-plain:before {
+  background-image: url(../images/features-item-2.png);
+}
+.features__item-insight:before {
+  background-image: url(../images/features-item-3.png);
+}
+
+@media screen and (min-width: 700px) and (max-width: 1199px) {
+  .features__items {
+    justify-content: center;
+  }
+  .features__item {
+    flex-basis: 50%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features {
+    background-image: url(../images/pen-holder.png), url(../images/earphones.png), url(../images/coffee-cup.png);
+    background-position: left top, calc(100% - 1em) top, calc(100% + 1em) bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {    
+    padding-top: 3.25em;
+    padding-bottom: 4em;
+    padding-right: 3em;
+    padding-left: 3em;
+    
+  }
+  .features__item {
+    flex-basis: 33%;
+  }
+}
+
+
+

@@ -1,0 +1,200 @@
+.site-footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  font-family: 'Exo', sans-serif;
+  font-size: 40px;
+  padding-top: 1em;
+  padding-bottom: 2.375em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.site-footer__title {
+  font-size: 0.55em;
+  line-height: 1.4em;
+}
+
+.site-footer__info {
+  padding-top: 1em;
+}
+.site-footer__info-logo {
+  font-size: 0.672em;
+  display: flex;
+}
+.site-footer__info-logo .highlight {
+  color: #fff;
+  margin-left: 5px;
+  position: relative;
+}
+.site-footer__info-logo .highlight:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: url(../images/footer-logo-part.svg);
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 46px;
+  left: -2px;
+  top: -5px;
+}
+.site-footer__info-contacts {
+  font-size: 0.35em;
+  color: var(--black);
+  opacity: 0.56;
+  font-weight: 500;
+  line-height: 1.85em;
+  margin-top: 10px;
+}
+
+.site-footer__nav {
+  padding-top: 1em;
+  display: flex;
+}
+.site-footer__nav-item {
+  width: 50%;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.site-footer__nav-item ul {
+  margin-top: 20px;
+}
+.site-footer__nav-item li {
+  font-size: 0.35em;
+  margin-top: 1em;
+}
+.site-footer__nav-item li a {
+  color: var(--black);
+  opacity: 0.66;
+  text-decoration: none;
+  
+}
+.site-footer__nav-item a:hover {
+  text-decoration: underline;
+}
+
+.site-footer__news {
+  padding-top: 1em;
+}
+.site-footer__news-form {
+  display: flex;
+  font-size: 0.4em;
+  margin-top: 20px;
+}
+.site-footer__news-form input {
+  background-color: rgba(141, 141, 141, 0.2);
+  border: 1px solid rgb(78, 78, 94);
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  opacity: 0.4;
+  padding-top: 0.8em;
+  padding-bottom: 0.9em;
+  padding-left: 1.6875em;
+  padding-right: 1.6875em;
+  height: 50px;
+}
+.site-footer__news-form button {
+  background-color: var(--pink);
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: 0;
+  padding-top: 0.8em;
+  padding-bottom: 0.9em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-left: -1px;
+  background-image: url(../images/button-send.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.site-footer__news-form button:hover {
+  opacity: 0.8;  
+}
+
+
+.site-footer__news-social {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.site-footer__news-social > a {
+  width: 20px;
+  height: 21px;
+  background-repeat: no-repeat;
+}
+.site-footer__news-social > a:hover {
+  opacity: 0.8;
+}
+.site-footer__news-social-dribbble {
+  background-image: url(../images/dribbble.png);
+}
+.site-footer__news-social-facebook {
+  background-image: url(../images/facebook.png);
+}
+.site-footer__news-social-gplus {
+  background-image: url(../images/googleplus.png);
+  background-position-y: 3px;
+}
+.site-footer__news-social-twitter {
+  background-image: url(../images/twitter.png);
+  background-position-y: 3px;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .site-footer {
+    justify-content: flex-start;
+  }
+  .site-footer__nav {
+    width: 100%;
+  }  
+  .site-footer__nav-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .site-footer {
+    padding-right: 330px;
+  }
+  .site-footer:before {
+    content: "";
+    position: absolute;
+    border-bottom: 330px solid transparent;
+    border-right: 330px solid var(--light-pink);
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  .site-footer__info {
+    width: 50%;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .site-footer {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .site-footer__info {
+    width: 25%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .site-footer__nav {
+    width: 50%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+  .site-footer__news {
+    width: 25%;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}

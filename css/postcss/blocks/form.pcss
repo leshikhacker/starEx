@@ -1,0 +1,138 @@
+.form {
+  font-family: 'Exo', sans-serif;
+  font-size: 40px;
+  background-color: #323969;
+  text-align: center;
+  padding-top: 2.25em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.form .section-title {
+  color: #fff;
+}
+
+.form__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  margin-top: 0.75em;
+}
+
+.form__control {
+  width: 100%;
+  padding: 7.5px;
+  position: relative;
+}
+
+.form__control-notice {
+  position: absolute;
+  display: none;
+  top: -40px;
+  color: var(--light-gray);
+  font-size: 0.4em;
+  padding-left: 30px;
+  
+}
+.form__control-notice:before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position-y: 5px;
+  background-size: 56px;
+  width: 56px;
+  height: 46px;
+  left: 0;
+}
+
+.form__input {
+  font-size: 0.4em;
+  padding: 0.75em 1.5em;
+  background-color: rgba(246, 245, 243, 0.2);
+  border-radius: 0.1875em;
+  border: 1px solid #fff;
+  opacity: 0.502;
+  color: var(--light-gray);
+  width: 100%;
+}
+
+.form__button {
+  font-size: 0.4em;
+  width: 100%;
+  background-color:var(--pink);
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 0.1875em;
+}
+
+.form__button:hover {
+  opacity: 0.8;
+}
+
+.form__text {
+  font-size: 0.4em;
+  opacity: 0.6;
+  color: var(--light-gray);
+  margin-top: 1.25em;
+}
+.form__text a {
+  color: inherit;
+}
+.form__text a:hover {
+  text-decoration: none;
+}
+
+
+@media screen and (min-width: 700px) {
+  .form__control-notice {  
+    display: block;
+  }
+  
+}
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  .form__controls {
+    flex-basis: 50%;
+    margin-bottom: 1.5em;
+  }
+  .form__control {
+    width: 50%;
+  }
+  .form__control-notice {
+    top: 90px;
+  }
+  .form__control-notice:before {
+    transform: rotate(180deg);
+    right: -30px;
+    left: auto;
+    top: -20px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .form__controls {
+    flex-basis: 25%;
+  }
+  .form__control {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .form__controls {
+    margin-top: 2.25em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form {
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+  }
+  
+}

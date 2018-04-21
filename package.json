@@ -1,27 +1,29 @@
 {
-  "name": "gulp-simple-starter",
+  "name": "gulp-postcss-starter",
   "version": "1.0.0",
-  "description": "My gulp simple starter",
+  "description": "My gulp postcss starter",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/leshikhacker/gulp-postcss-starter.git"
   },
   "author": "leshikhacker",
   "license": "ISC",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/leshikhacker/gulp-postcss-starter/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/leshikhacker/gulp-postcss-starter#readme",
   "devDependencies": {
     "autoprefixer": "*",
     "browser-sync": "*",
+    "css-mqpacker": "*",
+    "csswring": "*",
     "gulp": "*",
     "gulp-rename": "*",
     "gulp-postcss": "*",
     "postcss-import": "*",
-    "postcss-css-variables": "*"
+    "precss": "*"
   }
 }
