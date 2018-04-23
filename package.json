@@ -23,6 +23,7 @@
     "gulp": "*",
     "gulp-rename": "*",
     "gulp-postcss": "*",
+    "gulp-imagemin": "*",
     "postcss-import": "*",
     "precss": "*"
   }

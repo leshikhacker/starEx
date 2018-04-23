@@ -1,11 +1,12 @@
-var gulp = require('gulp');
-var rename = require('gulp-rename');
-var browserSync = require('browser-sync').create();
-var postcss = require('gulp-postcss');
-var autoprefixer = require('autoprefixer');
-var precss = require('precss');
-var mqpacker = require('css-mqpacker');
-var postcssImport  = require("postcss-import");
+const gulp = require('gulp');
+const rename = require('gulp-rename');
+const browserSync = require('browser-sync').create();
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const precss = require('precss');
+const mqpacker = require('css-mqpacker');
+const postcssImport  = require("postcss-import");
+const imagemin = require('gulp-imagemin');
 
 
 gulp.task('serve', ['css'], function() {
@@ -38,6 +39,12 @@ gulp.task('css', function () {
     }))
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream());
+});
+
+gulp.task('image', function () {
+  gulp.src('./fixtures/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('./images'));
 });
 
 gulp.task('default', ['serve']);
