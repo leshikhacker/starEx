@@ -724,12 +724,15 @@ body {
   display: flex;
   font-size: 0.4em;
   margin-top: 20px;
+  max-width: 100%;
 }
 .site-footer__news-form input {
   background-color: rgba(141, 141, 141, 0.2);
   border: 1px solid rgb(78, 78, 94);
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
   opacity: 0.4;
   padding-top: 0.8em;
   padding-bottom: 0.9em;
