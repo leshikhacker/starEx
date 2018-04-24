@@ -7,6 +7,7 @@ const precss = require('precss');
 const mqpacker = require('css-mqpacker');
 const postcssImport  = require("postcss-import");
 const imagemin = require('gulp-imagemin');
+var spritesmith = require('gulp.spritesmith');
 
 
 gulp.task('serve', ['css'], function() {
@@ -41,8 +42,16 @@ gulp.task('css', function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task('image', function () {
-  gulp.src('./fixtures/*')
+gulp.task('sprite', function () {
+  var spriteData = gulp.src('./fixtures/sprites/*.png').pipe(spritesmith({
+    imgName: 'sprite.png',
+    cssName: 'sprite.css'
+  }));
+  return spriteData.pipe(gulp.dest('./images/sprites'));
+});
+
+gulp.task('image', ['sprite'], function () {
+  gulp.src('./fixtures/images/*')
     .pipe(imagemin())
     .pipe(gulp.dest('./images'));
 });

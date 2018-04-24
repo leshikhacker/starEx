@@ -25,6 +25,7 @@
     "gulp-postcss": "*",
     "gulp-imagemin": "*",
     "postcss-import": "*",
-    "precss": "*"
+    "precss": "*",
+    "gulp.spritesmith": "*"
   }
 }
