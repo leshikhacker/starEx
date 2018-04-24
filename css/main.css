@@ -739,6 +739,7 @@ body {
   padding-left: 1.6875em;
   padding-right: 1.6875em;
   height: 50px;
+  width: 100%;
 }
 .site-footer__news-form button {
   background-color: #ff6d6d;
@@ -781,20 +782,6 @@ body {
 .site-footer__news-social .icon-twitter {
   margin-top: 3px;
 }
-/*.site-footer__news-social-dribbble {
-  background-image: url(../images/dribbble.png);
-}
-.site-footer__news-social-facebook {
-  background-image: url(../images/facebook.png);
-}
-.site-footer__news-social-gplus {
-  background-image: url(../images/googleplus.png);
-  background-position-y: 3px;
-}
-.site-footer__news-social-twitter {
-  background-image: url(../images/twitter.png);
-  background-position-y: 3px;
-}*/
 @media screen and (min-width: 640px) {
   .cover {  
     font-size: 40px;
